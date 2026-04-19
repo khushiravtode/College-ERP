@@ -4,14 +4,16 @@
  */
 package model;
 
+import java.util.Date;
+
 public class Attendance {
 
-    private int studentId;
-    private String subject;
-    private String date;
-    private String status; // "Present" or "Absent"
+    int studentId;
+    String subject;
+    Date date;
+    String status; // "Present" or "Absent"
 
-    public Attendance(int studentId, String subject, String date, String status) {
+    public Attendance(int studentId, String subject, Date date, String status) {
         this.studentId = studentId;
         this.subject = subject;
         this.date = date;
@@ -27,7 +29,7 @@ public class Attendance {
         return subject;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
